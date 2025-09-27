@@ -1,0 +1,78 @@
+#about {
+  background-color: #241b30;
+  padding: 40px;
+}
+
+.main-about {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5rem;
+  padding: 60px;
+}
+
+#about h1 {
+  color: #d6c5ee;
+  font-weight: 500;
+  /* display: block; */
+  /* text-align: center; */
+  font-size: 14px;
+  padding: 6px 16px;
+  background-color: #4e4161;
+  border-radius: 12px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.left-side-profile {
+  position: relative;
+  display: inline-block;
+}
+
+.left-side-profile-bg {
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+  width: 400px;
+  height: 450px;
+  background-color: #40364e;
+  border: 8px solid transparent;
+  z-index: 0;
+}
+
+.left-side-profile img {
+  position: relative;
+  max-width: 400px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.right-side-content {
+  width: 50%;
+}
+
+.sub-heading {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.right-side-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #d2cfd8;
+}
+
+.about-me {
+  display: flex;
+  margin: 20px;
+  color: #d1cfd4;
+}
+
+.profession {
+  padding-left: 30px;
+}
+
+.study {
+  padding-right: 20px;
+}
