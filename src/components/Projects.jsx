@@ -31,14 +31,14 @@ const ProjectsSection = () => {
   return (
     <section className="projects-section">
       {/* Main heading */}
-      <h2 className="section-label">Projects</h2>
+      <h2 className="section-label" id="projects">Projects</h2>
 
       {/* Project 1 - Portfolio Website */}
       <ProjectCard
         image={jobPic}
         title="Job Listing Web App"
-        description="My personal portfolio built with React and Django backend."
-        link="https://yourportfolio.com"
+        description="A job listing web app built with React and Django backend."
+        link="https://github.com/ZainNazeer/job-app"
       />
 
       {/* Project 2 - Chat App */}
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
         image={chatPic}
         title="Chat Web App"
         description="A real-time chat application built using React and Socket.IO."
-        link="https://github.com/yourname/chat-app"
+        link="https://github.com/ZainNazeer30/chat-app"
       />
     </section>
   );

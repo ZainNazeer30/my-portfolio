@@ -5,6 +5,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 50px 20px;
+  gap: 40px;
+  flex-wrap: wrap; /* ✅ makes layout adapt */
 }
 
 .hero-text {
@@ -21,13 +23,14 @@
   color: #c8cdd3;
   margin-bottom: 30px;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 .hero-text h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 65px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .hero-text .desc {
@@ -52,6 +55,10 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.social-links {
+  margin-top: 20px;
+}
+
 .social-links a {
   color: #f8f8fa;
   font-size: 20px;
@@ -67,6 +74,7 @@
 .profile-container {
   position: relative;
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .profile-bg {
@@ -86,5 +94,72 @@
   height: 320px;
   object-fit: cover;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  z-index: 0;
+  z-index: 1;
+}
+
+/* ---------------------- */
+/* 📱 Responsive Design  */
+/* ---------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column-reverse; /* image below text */
+    text-align: center;
+    margin: 60px auto;
+    padding: 40px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .hero-text .desc {
+    font-size: 16px;
+  }
+
+  .profile-bg {
+    display: none; /* hide bg block on medium screens */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    margin: 40px auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .hero-text .intro {
+    font-size: 16px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .home-intro {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .hero-text .desc {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 240px;
+  }
 }

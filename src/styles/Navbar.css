@@ -19,6 +19,7 @@ nav {
   color: #fff;
 }
 
+/* Nav Links */
 nav a {
   margin: 0 15px;
   text-decoration: none;
@@ -28,6 +29,12 @@ nav a {
   transition: all 0.3s ease;
 }
 
+nav a:hover {
+  color: #fff; /* ✅ white hover */
+  transform: translateY(-2px);
+}
+
+/* Button Style */
 .nav-btn a {
   display: inline-block;
   padding: 8px 16px;
@@ -39,8 +46,64 @@ nav a {
   transition: 0.3s ease;
 }
 
-
-/* .nav-btn:hover {
+.nav-btn a:hover {
   background: #c1c2c4;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-} */
+}
+
+/* ---------------------- */
+/* 📱 Responsive Navbar  */
+/* ---------------------- */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+/* Tablet + Mobile */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 25px;
+  }
+
+  .menu {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: #030811;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 20px;
+    transition: right 0.3s ease;
+  }
+
+  .menu.active {
+    right: 0; /* ✅ slide in */
+  }
+
+  .hamburger {
+    display: flex; /* ✅ show hamburger */
+  }
+
+  nav a {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+}

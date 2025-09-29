@@ -36,7 +36,7 @@ function Experience() {
               Created to-do list applications to practice CRUD operations.
             </li>
             <li>
-              Designed a React calculator to strengthen component/state skills.
+              Developed a job listing web app  using React and Django.
             </li>
           </ul>
           <div className="exp-years">Nov 2024 - Present</div>

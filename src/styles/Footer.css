@@ -10,7 +10,6 @@
   font-size: 20px;
   margin-bottom: 45px;
   font-weight: 600;
-
 }
 
 .footer-top p {
@@ -23,6 +22,7 @@
   margin: 18px 0;
 }
 
+/* Contact Links */
 .footer-link {
   display: flex;
   align-items: center;
@@ -34,10 +34,6 @@
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
-/* .footer-link:hover {
-  color: #00c4ff;
-} */
 
 .social-text {
   margin-top: 20px;
@@ -72,19 +68,13 @@
   transition: color 0.3s ease;
 }
 
-
 .copied-msg {
   font-size: 12px;
   color: #00c4ff;
   margin-left: 5px;
 }
 
-/* .footer-socials a:hover {
-    
-    background-color: #616161;
-
-} */
-
+/* Footer Bottom */
 .footer-bottom {
   margin-top: 30px;
   font-size: 13px;
@@ -97,4 +87,63 @@
   color: #ff4d6d; /* ❤️ color */
   font-weight: bold;
 }
- 
+
+/* ---------------------- */
+/* 📱 Responsive Design  */
+/* ---------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .footer-top h3 {
+    font-size: 18px;
+  }
+
+  .footer-top p {
+    font-size: 14px;
+  }
+
+  .footer-link {
+    font-size: 18px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+
+  .footer-items {
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-top h3 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .footer-top p {
+    font-size: 13px;
+  }
+
+  .footer-link {
+    flex-direction: column; /* Stack contact items */
+    font-size: 16px;
+    gap: 5px;
+  }
+
+  .footer-items {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .footer-socials a {
+    font-size: 20px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}

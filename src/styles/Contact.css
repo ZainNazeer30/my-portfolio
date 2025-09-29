@@ -1,16 +1,13 @@
-#contact {
-  padding: 60px 40px;
+.contact {
+  padding: 60px 20px;
   text-align: center;
   background-color: #241b30;
-
 }
 
-#contact h2 {
+.contact h2 {
   color: #d6c5ee;
   font-weight: 500;
   display: inline-block;
-  /* margin: 0 auto; */
-  /* width: fit-content; */
   font-size: 14px;
   padding: 7px 22px;
   background-color: #4e4161;
@@ -19,7 +16,7 @@
 }
 
 .cont-form {
-  padding: 40px;
+  padding: 20px;
 }
 
 form {
@@ -38,35 +35,38 @@ label {
 
 input,
 textarea {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #c9c9df;
   border-radius: 6px;
   font-size: 1rem;
   width: 100%;
   background-color: #d3e2e9;
-
 }
 
 textarea {
-  min-height: 80px;
+  min-height: 100px;
 }
 
 .button-groups {
   display: flex;
   gap: 10px;
   margin-top: 10px;
+  flex-wrap: wrap; /* ✅ allows buttons to move on smaller screens */
 }
 
-button[type="submit"] {
-  background: #446e77;
+button[type="submit"],
+button[type="reset"] {
   color: #fff;
   border: none;
   padding: 12px 28px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  /* transition: background 0.3s; */
+}
+
+button[type="submit"] {
+  background: #446e77;
 }
 
 button[type="submit"]:hover {
@@ -75,15 +75,63 @@ button[type="submit"]:hover {
 
 button[type="reset"] {
   background: #60696b;
-  color: #fff;
-  border: none;
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
 }
 
 button[type="reset"]:hover {
   background: #3d404b;
+}
+
+/* ---------------------- */
+/* 📱 Responsive Design  */
+/* ---------------------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  #contact {
+    padding: 40px 15px;
+  }
+
+  #contact h2 {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+
+  .button-groups {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  button[type="submit"],
+  button[type="reset"] {
+    width: 100%; /* full-width buttons on tablet */
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  #contact {
+    padding: 30px 10px;
+  }
+
+  #contact h2 {
+    font-size: 12px;
+    padding: 6px 18px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button[type="submit"],
+  button[type="reset"] {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }

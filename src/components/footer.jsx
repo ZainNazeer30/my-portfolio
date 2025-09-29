@@ -12,9 +12,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
       <div className="footer-top">
-        <h3>Contat here</h3>
+        <h3>Contact here</h3>
         <p>
           What’s next? Feel free to reach out to me if you are looking for a
           developer, have a query, or simply want to connect.
