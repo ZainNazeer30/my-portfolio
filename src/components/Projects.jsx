@@ -45,8 +45,8 @@ const ProjectsSection = () => {
       <ProjectCard
         image={chatPic}
         title="Chat Web App"
-        description="A real-time chat application built using React and Socket.IO."
-        link="https://github.com/ZainNazeer30/chat-app"
+        description="A real-time chat application built using MERN Stack and Socket.IO."
+        link="https://chat-appllication-frontend.netlify.app/"
       />
     </section>
   );
