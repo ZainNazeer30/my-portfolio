@@ -88,33 +88,7 @@
   font-weight: bold;
 }
 
-/* ---------------------- */
-/* 📱 Responsive Design  */
-/* ---------------------- */
-
-/* Tablet */
-@media (max-width: 992px) {
-  .footer-top h3 {
-    font-size: 18px;
-  }
-
-  .footer-top p {
-    font-size: 14px;
-  }
-
-  .footer-link {
-    font-size: 18px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  }
-
-  .footer-items {
-    flex-wrap: wrap;
-    font-size: 14px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .footer {
     padding: 30px 15px;
   }
@@ -129,7 +103,7 @@
   }
 
   .footer-link {
-    flex-direction: column; /* Stack contact items */
+    flex-direction: column;
     font-size: 16px;
     gap: 5px;
   }

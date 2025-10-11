@@ -81,12 +81,7 @@ button[type="reset"]:hover {
   background: #3d404b;
 }
 
-/* ---------------------- */
-/* 📱 Responsive Design  */
-/* ---------------------- */
-
-/* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   #contact {
     padding: 40px 15px;
   }
@@ -107,31 +102,7 @@ button[type="reset"]:hover {
 
   button[type="submit"],
   button[type="reset"] {
-    width: 100%; /* full-width buttons on tablet */
+    width: 100%;
     font-size: 15px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  #contact {
-    padding: 30px 10px;
-  }
-
-  #contact h2 {
-    font-size: 12px;
-    padding: 6px 18px;
-  }
-
-  input,
-  textarea {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  button[type="submit"],
-  button[type="reset"] {
-    font-size: 14px;
-    padding: 10px 20px;
   }
 }

@@ -6,7 +6,7 @@
 .skills-section h2 {
   color: #d6c5ee;
   font-weight: 500;
-  display: inline-block; /* ✅ better alignment than inline */
+  display: inline-block; 
   font-size: 14px;
   padding: 7px 22px;
   background-color: #4e4161;
@@ -18,11 +18,10 @@
   margin: 20px auto 40px;
   font-weight: 400;
   font-size: 20px;
-  max-width: 600px; /* ✅ keeps text neat */
+  max-width: 600px; 
   line-height: 1.5;
 }
 
-/* Grid layout */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -33,7 +32,6 @@
   margin: 0 auto;
 }
 
-/* Individual skill */
 .skill-item {
   display: flex;
   flex-direction: column;
@@ -49,10 +47,9 @@
 
 .skill-item:hover {
   transform: scale(1.1);
-  filter: brightness(1.2); /* ✅ subtle hover glow */
+  filter: brightness(1.2); 
 }
 
-/* Specific filters for dark bg logos */
 .skill-icon.socket-io {
   filter: invert(1) brightness(2);
 }
@@ -69,11 +66,7 @@
   text-align: center;
 }
 
-/* ---------------------- */
-/* 📱 Responsive Design  */
-/* ---------------------- */
-
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .skills-section p {
     font-size: 16px;
     margin-bottom: 30px;

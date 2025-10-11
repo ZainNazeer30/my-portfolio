@@ -97,38 +97,7 @@
   z-index: 1;
 }
 
-/* ---------------------- */
-/* 📱 Responsive Design  */
-/* ---------------------- */
-
-/* Tablet */
-@media (max-width: 992px) {
-  .hero {
-    flex-direction: column-reverse; /* image below text */
-    text-align: center;
-    margin: 60px auto;
-    padding: 40px 20px;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .hero-text h1 {
-    font-size: 48px;
-  }
-
-  .hero-text .desc {
-    font-size: 16px;
-  }
-
-  .profile-bg {
-    display: none; /* hide bg block on medium screens */
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .hero {
     margin: 40px auto;
     padding: 20px;

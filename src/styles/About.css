@@ -3,26 +3,28 @@
   padding: 40px;
 }
 
+/* ====== Desktop Layout ====== */
 .main-about {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   line-height: 1.5rem;
   padding: 60px;
+  flex-wrap: wrap; /* in case width shrinks */
 }
 
 #about h1 {
   color: #d6c5ee;
   font-weight: 500;
-  /* display: block; */
-  /* text-align: center; */
   font-size: 14px;
   padding: 6px 16px;
   background-color: #4e4161;
   border-radius: 12px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   width: fit-content;
 }
 
+/* ====== Left Side (Image) ====== */
 .left-side-profile {
   position: relative;
   display: inline-block;
@@ -37,15 +39,20 @@
   background-color: #40364e;
   border: 8px solid transparent;
   z-index: 0;
+  border-radius: 12px;
 }
 
 .left-side-profile img {
   position: relative;
   max-width: 400px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   z-index: 1;
+  border-radius: 12px;
 }
 
+/* ====== Right Side (Text) ====== */
 .right-side-content {
   width: 50%;
 }
@@ -54,6 +61,7 @@
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .right-side-content p {
@@ -63,16 +71,68 @@
   color: #d2cfd8;
 }
 
+/* ====== About Info ====== */
 .about-me {
   display: flex;
-  margin: 20px;
+  margin: 20px 0;
   color: #d1cfd4;
+  flex-wrap: wrap;
+}
+
+.study {
+  padding-right: 20px;
 }
 
 .profession {
   padding-left: 30px;
 }
 
-.study {
-  padding-right: 20px;
+/* ====== 📱 Mobile Responsive ====== */
+@media (max-width: 576px) {
+  .main-about {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  #about h1 {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .left-side-profile-bg {
+    display: none; /* hide background shape for clean mobile look */
+  }
+
+  .left-side-profile img {
+    max-width: 280px;
+    margin: 0 auto 25px;
+    display: block;
+  }
+
+  .right-side-content {
+    width: 100%;
+  }
+
+  .sub-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .right-side-content p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+  }
+
+  .study, .profession {
+    padding: 0;
+    text-align: center;
+  }
 }

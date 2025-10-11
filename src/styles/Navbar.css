@@ -1,10 +1,12 @@
+/* 🌙 Navbar Base */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background-color: #030811;
-  border: 1px solid #15191f;
+  background: rgba(3, 8, 17, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #15191f;
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,31 +14,37 @@ nav {
   transition: top 0.3s ease;
 }
 
+/* Logo */
 .logo {
-  font-family: 'Poppins', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
   color: #fff;
+  text-decoration: none;
 }
 
-/* Nav Links */
-nav a {
-  margin: 0 15px;
+/* Links */
+.list-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.list-links a {
   text-decoration: none;
   color: #c8cdd3;
   font-size: 18px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
-nav a:hover {
-  color: #fff; /* ✅ white hover */
+.list-links a:hover {
+  color: #fff;
   transform: translateY(-2px);
 }
 
-/* Button Style */
+/* Button */
 .nav-btn a {
-  display: inline-block;
   padding: 8px 16px;
   color: #030811;
   background-color: #fff;
@@ -51,59 +59,40 @@ nav a:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ---------------------- */
-/* 📱 Responsive Navbar  */
-/* ---------------------- */
-.menu {
-  display: flex;
-  align-items: center;
-}
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: #fff;
-  border-radius: 3px;
-  transition: 0.3s ease;
-}
-
-/* Tablet + Mobile */
-@media (max-width: 768px) {
+/* 📱 Mobile Responsive */
+@media (max-width: 576px) {
   nav {
-    padding: 15px 25px;
-  }
-
-  .menu {
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    width: 250px;
-    height: 100vh;
-    background: #030811;
+    padding: 12px 20px;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px 20px;
-    gap: 20px;
-    transition: right 0.3s ease;
   }
 
-  .menu.active {
-    right: 0; /* ✅ slide in */
+  .logo {
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 
-  .hamburger {
-    display: flex; /* ✅ show hamburger */
+  .list-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 12px;
+    margin-top: 5px;
   }
 
-  nav a {
+  .list-links a {
     font-size: 16px;
-    margin: 10px 0;
+  }
+
+  .nav-btn {
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .nav-btn a {
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 15px;
   }
 }
