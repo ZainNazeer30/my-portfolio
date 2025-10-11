@@ -1,5 +1,5 @@
 import React from "react";
-import aboutPic from "../assets/zain-pic.jpg";
+import aboutPic from "../assets/about.png";
 import "../styles/About.css"
 
 function About() {

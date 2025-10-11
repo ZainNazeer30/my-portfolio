@@ -131,4 +131,7 @@
     width: 200px;
     height: 240px;
   }
+  .profile-bg {
+    display: none;
+  }
 }

@@ -3,14 +3,12 @@
   padding: 40px;
 }
 
-/* ====== Desktop Layout ====== */
 .main-about {
   display: flex;
   justify-content: space-between;
   align-items: center;
   line-height: 1.5rem;
   padding: 60px;
-  flex-wrap: wrap; /* in case width shrinks */
 }
 
 #about h1 {
@@ -24,7 +22,6 @@
   width: fit-content;
 }
 
-/* ====== Left Side (Image) ====== */
 .left-side-profile {
   position: relative;
   display: inline-block;
@@ -32,27 +29,24 @@
 
 .left-side-profile-bg {
   position: absolute;
-  bottom: 120px;
+  top: 60px;
   right: 50px;
   width: 400px;
-  height: 450px;
+  height: 500px;
   background-color: #40364e;
   border: 8px solid transparent;
   z-index: 0;
-  border-radius: 12px;
 }
 
 .left-side-profile img {
   position: relative;
   max-width: 400px;
   width: 100%;
-  height: auto;
+  height: 500px;
   object-fit: cover;
   z-index: 1;
-  border-radius: 12px;
 }
 
-/* ====== Right Side (Text) ====== */
 .right-side-content {
   width: 50%;
 }
@@ -71,7 +65,6 @@
   color: #d2cfd8;
 }
 
-/* ====== About Info ====== */
 .about-me {
   display: flex;
   margin: 20px 0;
@@ -87,7 +80,6 @@
   padding-left: 30px;
 }
 
-/* ====== 📱 Mobile Responsive ====== */
 @media (max-width: 576px) {
   .main-about {
     flex-direction: column;
@@ -101,7 +93,7 @@
   }
 
   .left-side-profile-bg {
-    display: none; /* hide background shape for clean mobile look */
+    display: none; 
   }
 
   .left-side-profile img {
