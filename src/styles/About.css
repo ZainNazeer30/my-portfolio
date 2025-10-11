@@ -98,6 +98,7 @@
 
   .left-side-profile img {
     max-width: 280px;
+    height: 300px;
     margin: 0 auto 25px;
     display: block;
   }

@@ -26,14 +26,12 @@ const ProjectCard = ({ image, title, description, link }) => {
   );
 };
 
-// Projects section wrapper
 const ProjectsSection = () => {
   return (
     <section className="projects-section">
-      {/* Main heading */}
+
       <h2 className="section-label" id="projects">Projects</h2>
 
-      {/* Project 1 - Portfolio Website */}
       <ProjectCard
         image={jobPic}
         title="Job Listing Web App"
@@ -41,7 +39,6 @@ const ProjectsSection = () => {
         link="https://github.com/ZainNazeer/job-app"
       />
 
-      {/* Project 2 - Chat App */}
       <ProjectCard
         image={chatPic}
         title="Chat Web App"

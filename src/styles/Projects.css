@@ -74,6 +74,7 @@
 @media (max-width: 576px) {
   .projects-section {
     padding: 40px 20px;
+    flex-direction: column;
   }
 
   .section-label {
